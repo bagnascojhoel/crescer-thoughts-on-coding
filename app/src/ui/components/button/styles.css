@@ -1,0 +1,18 @@
+.button {
+  padding: var(--gutter) var(--large-gutter);
+
+  background-color: var(--color-gray);
+  border-radius: var(--border-radius);
+  border: none;
+
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.button--disabled:hover {
+  cursor: not-allowed;
+}
+
+.button:hover {
+  filter: brightness(1.1);
+}

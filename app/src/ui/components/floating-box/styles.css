@@ -1,0 +1,4 @@
+.floating-box {
+  padding: var(--large-gutter);
+  box-shadow: var(--box-shadow);
+}

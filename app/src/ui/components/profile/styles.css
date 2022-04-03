@@ -1,0 +1,42 @@
+.profile {
+  padding: var(--gutter);
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.profile__avatar {
+  margin-bottom: var(--large-gutter);
+}
+
+.profile__content {
+  padding: 0 var(--large-gutter);
+}
+
+.profile__actions {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.profile__content__header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: var(--large-gutter);
+}
+
+.profile__name {
+  margin-top: 0;
+}
+
+.profile__content__item {
+  margin-right: var(--large-gutter);
+}
+
+.profile__content__item:last-of-type {
+  margin-right: inherit;
+}
+

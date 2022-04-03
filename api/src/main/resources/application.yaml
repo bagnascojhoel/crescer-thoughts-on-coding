@@ -1,0 +1,24 @@
+server:
+  port: 8090
+  servlet:
+    context-path: /tcc-java
+  error:
+    include-message: ALWAYS
+    include-stacktrace: NEVER
+    include-binding-errors: ALWAYS
+logging:
+  level:
+    org.hibernate.SQL: DEBUG
+    org.hibernate.type.descriptor.sql.BasicBinder: TRACE
+spring:
+  jpa:
+    database-platform: org.hibernate.dialect.Oracle12cDialect
+    hibernate:
+      ddl-auto: validate
+  datasource:
+    hikari:
+      maximum-pool-size: 3
+    driver-class-name: oracle.jdbc.OracleDriver
+    username: ALUNO12_CRE
+    password: ALUNO12_CRE
+    url: jdbc:oracle:thin:@10.99.220.86:1521:ORCL

@@ -1,0 +1,28 @@
+.navbar {
+  padding: var(--mini-gutter) 0;
+  background-color: var(--color-light-gray);
+  box-shadow: var(--box-shadow);
+}
+
+.navbar-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--gutter) 0;
+}
+
+.navbar__list-item__content {
+  padding: var(--small-gutter);
+
+  display: block;
+
+  color: var(--color-gray);
+
+  text-decoration: none;
+  font-weight: 300;
+}
+
+.navbar__list-item__content:hover {
+  color: var(--color-black);
+}

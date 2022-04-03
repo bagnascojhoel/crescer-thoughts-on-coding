@@ -1,0 +1,19 @@
+.alert {
+  --color: var(--color-black);
+
+  margin: var(--gutter) 0;
+  padding: var(--gutter);
+  
+  border: 1px solid var(--color);
+  border-radius: var(--border-radius);
+
+  color: var(--color);
+}
+
+.alert--error {
+  --color: var(--color-error);
+}
+
+.alert--success {
+  --color: var(--color-success);
+}

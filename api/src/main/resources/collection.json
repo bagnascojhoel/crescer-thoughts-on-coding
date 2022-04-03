@@ -1,0 +1,3875 @@
+{
+	"info": {
+		"_postman_id": "2c9ae9ec-1d40-4ebd-b64b-f9d8f8c2f70e",
+		"name": "TOC API",
+		"description": "Api Documentation",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "public/auth",
+			"item": [
+				{
+					"name": "login",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"email\": \"<string>\",\n    \"password\": \"<string>\"\n}",
+							"options": {
+								"raw": {}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/public/auth/login",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"public",
+								"auth",
+								"login"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Created",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"email\": \"<string>\",\n    \"password\": \"<string>\"\n}"
+								},
+								"url": {
+									"raw": "{{baseUrl}}/public/auth/login",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"public",
+										"auth",
+										"login"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						},
+						{
+							"name": "Unauthorized",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"email\": \"<string>\",\n    \"password\": \"<string>\"\n}"
+								},
+								"url": {
+									"raw": "{{baseUrl}}/public/auth/login",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"public",
+										"auth",
+										"login"
+									]
+								}
+							},
+							"status": "Unauthorized",
+							"code": 401,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						},
+						{
+							"name": "OK",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"email\": \"<string>\",\n    \"password\": \"<string>\"\n}"
+								},
+								"url": {
+									"raw": "{{baseUrl}}/public/auth/login",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"public",
+										"auth",
+										"login"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "*/*"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						},
+						{
+							"name": "Not Found",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"email\": \"<string>\",\n    \"password\": \"<string>\"\n}"
+								},
+								"url": {
+									"raw": "{{baseUrl}}/public/auth/login",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"public",
+										"auth",
+										"login"
+									]
+								}
+							},
+							"status": "Not Found",
+							"code": 404,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						},
+						{
+							"name": "Forbidden",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"email\": \"<string>\",\n    \"password\": \"<string>\"\n}"
+								},
+								"url": {
+									"raw": "{{baseUrl}}/public/auth/login",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"public",
+										"auth",
+										"login"
+									]
+								}
+							},
+							"status": "Forbidden",
+							"code": 403,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				},
+				{
+					"name": "signUp",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"birthDate\": \"<date>\",\n    \"email\": \"<string>\",\n    \"name\": \"<string>\",\n    \"nickname\": \"<string>\",\n    \"password\": \"<string>\",\n    \"profilePhoto\": \"<string>\"\n}",
+							"options": {
+								"raw": {}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/public/auth/sign-up",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"public",
+								"auth",
+								"sign-up"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Unauthorized",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"birthDate\": \"<date>\",\n    \"email\": \"<string>\",\n    \"name\": \"<string>\",\n    \"nickname\": \"<string>\",\n    \"password\": \"<string>\",\n    \"profilePhoto\": \"<string>\"\n}"
+								},
+								"url": {
+									"raw": "{{baseUrl}}/public/auth/sign-up",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"public",
+										"auth",
+										"sign-up"
+									]
+								}
+							},
+							"status": "Unauthorized",
+							"code": 401,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						},
+						{
+							"name": "Not Found",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"birthDate\": \"<date>\",\n    \"email\": \"<string>\",\n    \"name\": \"<string>\",\n    \"nickname\": \"<string>\",\n    \"password\": \"<string>\",\n    \"profilePhoto\": \"<string>\"\n}"
+								},
+								"url": {
+									"raw": "{{baseUrl}}/public/auth/sign-up",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"public",
+										"auth",
+										"sign-up"
+									]
+								}
+							},
+							"status": "Not Found",
+							"code": 404,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						},
+						{
+							"name": "Forbidden",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"birthDate\": \"<date>\",\n    \"email\": \"<string>\",\n    \"name\": \"<string>\",\n    \"nickname\": \"<string>\",\n    \"password\": \"<string>\",\n    \"profilePhoto\": \"<string>\"\n}"
+								},
+								"url": {
+									"raw": "{{baseUrl}}/public/auth/sign-up",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"public",
+										"auth",
+										"sign-up"
+									]
+								}
+							},
+							"status": "Forbidden",
+							"code": 403,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						},
+						{
+							"name": "Created",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"birthDate\": \"<date>\",\n    \"email\": \"<string>\",\n    \"name\": \"<string>\",\n    \"nickname\": \"<string>\",\n    \"password\": \"<string>\",\n    \"profilePhoto\": \"<string>\"\n}"
+								},
+								"url": {
+									"raw": "{{baseUrl}}/public/auth/sign-up",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"public",
+										"auth",
+										"sign-up"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						},
+						{
+							"name": "OK",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"birthDate\": \"<date>\",\n    \"email\": \"<string>\",\n    \"name\": \"<string>\",\n    \"nickname\": \"<string>\",\n    \"password\": \"<string>\",\n    \"profilePhoto\": \"<string>\"\n}"
+								},
+								"url": {
+									"raw": "{{baseUrl}}/public/auth/sign-up",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"public",
+										"auth",
+										"sign-up"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "private",
+			"item": [
+				{
+					"name": "friendship",
+					"item": [
+						{
+							"name": "requests",
+							"item": [
+								{
+									"name": "listMyFriendshipRequests",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/private/friendship/requests",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"private",
+												"friendship",
+												"requests"
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "Forbidden",
+											"originalRequest": {
+												"method": "GET",
+												"header": [],
+												"url": {
+													"raw": "{{baseUrl}}/private/friendship/requests",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"private",
+														"friendship",
+														"requests"
+													]
+												}
+											},
+											"status": "Forbidden",
+											"code": 403,
+											"_postman_previewlanguage": "text",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "text/plain"
+												}
+											],
+											"cookie": [],
+											"body": ""
+										},
+										{
+											"name": "OK",
+											"originalRequest": {
+												"method": "GET",
+												"header": [],
+												"url": {
+													"raw": "{{baseUrl}}/private/friendship/requests",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"private",
+														"friendship",
+														"requests"
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "text",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "*/*"
+												}
+											],
+											"cookie": [],
+											"body": ""
+										},
+										{
+											"name": "Unauthorized",
+											"originalRequest": {
+												"method": "GET",
+												"header": [],
+												"url": {
+													"raw": "{{baseUrl}}/private/friendship/requests",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"private",
+														"friendship",
+														"requests"
+													]
+												}
+											},
+											"status": "Unauthorized",
+											"code": 401,
+											"_postman_previewlanguage": "text",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "text/plain"
+												}
+											],
+											"cookie": [],
+											"body": ""
+										},
+										{
+											"name": "Not Found",
+											"originalRequest": {
+												"method": "GET",
+												"header": [],
+												"url": {
+													"raw": "{{baseUrl}}/private/friendship/requests",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"private",
+														"friendship",
+														"requests"
+													]
+												}
+											},
+											"status": "Not Found",
+											"code": 404,
+											"_postman_previewlanguage": "text",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "text/plain"
+												}
+											],
+											"cookie": [],
+											"body": ""
+										}
+									]
+								},
+								{
+									"name": "acceptFriendshipById",
+									"request": {
+										"method": "POST",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/private/friendship/requests/accept/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"private",
+												"friendship",
+												"requests",
+												"accept",
+												":id"
+											],
+											"variable": [
+												{
+													"id": "234fde98-2837-4871-92bd-3a19e42fdf0f",
+													"key": "id",
+													"value": "<string>",
+													"type": "string",
+													"description": "(Required) id"
+												}
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "Unauthorized",
+											"originalRequest": {
+												"method": "POST",
+												"header": [],
+												"url": {
+													"raw": "{{baseUrl}}/private/friendship/requests/accept/:id",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"private",
+														"friendship",
+														"requests",
+														"accept",
+														":id"
+													],
+													"variable": [
+														{
+															"key": "id"
+														}
+													]
+												}
+											},
+											"status": "Unauthorized",
+											"code": 401,
+											"_postman_previewlanguage": "text",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "text/plain"
+												}
+											],
+											"cookie": [],
+											"body": ""
+										},
+										{
+											"name": "Forbidden",
+											"originalRequest": {
+												"method": "POST",
+												"header": [],
+												"url": {
+													"raw": "{{baseUrl}}/private/friendship/requests/accept/:id",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"private",
+														"friendship",
+														"requests",
+														"accept",
+														":id"
+													],
+													"variable": [
+														{
+															"key": "id"
+														}
+													]
+												}
+											},
+											"status": "Forbidden",
+											"code": 403,
+											"_postman_previewlanguage": "text",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "text/plain"
+												}
+											],
+											"cookie": [],
+											"body": ""
+										},
+										{
+											"name": "Not Found",
+											"originalRequest": {
+												"method": "POST",
+												"header": [],
+												"url": {
+													"raw": "{{baseUrl}}/private/friendship/requests/accept/:id",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"private",
+														"friendship",
+														"requests",
+														"accept",
+														":id"
+													],
+													"variable": [
+														{
+															"key": "id"
+														}
+													]
+												}
+											},
+											"status": "Not Found",
+											"code": 404,
+											"_postman_previewlanguage": "text",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "text/plain"
+												}
+											],
+											"cookie": [],
+											"body": ""
+										},
+										{
+											"name": "Created",
+											"originalRequest": {
+												"method": "POST",
+												"header": [],
+												"url": {
+													"raw": "{{baseUrl}}/private/friendship/requests/accept/:id",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"private",
+														"friendship",
+														"requests",
+														"accept",
+														":id"
+													],
+													"variable": [
+														{
+															"key": "id"
+														}
+													]
+												}
+											},
+											"status": "Created",
+											"code": 201,
+											"_postman_previewlanguage": "text",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "text/plain"
+												}
+											],
+											"cookie": [],
+											"body": ""
+										},
+										{
+											"name": "OK",
+											"originalRequest": {
+												"method": "POST",
+												"header": [],
+												"url": {
+													"raw": "{{baseUrl}}/private/friendship/requests/accept/:id",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"private",
+														"friendship",
+														"requests",
+														"accept",
+														":id"
+													],
+													"variable": [
+														{
+															"key": "id"
+														}
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "text",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "text/plain"
+												}
+											],
+											"cookie": [],
+											"body": ""
+										}
+									]
+								},
+								{
+									"name": "denyFriendshipById",
+									"request": {
+										"method": "POST",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/private/friendship/requests/deny/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"private",
+												"friendship",
+												"requests",
+												"deny",
+												":id"
+											],
+											"variable": [
+												{
+													"id": "19febaf8-1ede-4503-a615-c0dc9501be2f",
+													"key": "id",
+													"value": "<string>",
+													"type": "string",
+													"description": "(Required) id"
+												}
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "Unauthorized",
+											"originalRequest": {
+												"method": "POST",
+												"header": [],
+												"url": {
+													"raw": "{{baseUrl}}/private/friendship/requests/deny/:id",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"private",
+														"friendship",
+														"requests",
+														"deny",
+														":id"
+													],
+													"variable": [
+														{
+															"key": "id"
+														}
+													]
+												}
+											},
+											"status": "Unauthorized",
+											"code": 401,
+											"_postman_previewlanguage": "text",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "text/plain"
+												}
+											],
+											"cookie": [],
+											"body": ""
+										},
+										{
+											"name": "Forbidden",
+											"originalRequest": {
+												"method": "POST",
+												"header": [],
+												"url": {
+													"raw": "{{baseUrl}}/private/friendship/requests/deny/:id",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"private",
+														"friendship",
+														"requests",
+														"deny",
+														":id"
+													],
+													"variable": [
+														{
+															"key": "id"
+														}
+													]
+												}
+											},
+											"status": "Forbidden",
+											"code": 403,
+											"_postman_previewlanguage": "text",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "text/plain"
+												}
+											],
+											"cookie": [],
+											"body": ""
+										},
+										{
+											"name": "Not Found",
+											"originalRequest": {
+												"method": "POST",
+												"header": [],
+												"url": {
+													"raw": "{{baseUrl}}/private/friendship/requests/deny/:id",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"private",
+														"friendship",
+														"requests",
+														"deny",
+														":id"
+													],
+													"variable": [
+														{
+															"key": "id"
+														}
+													]
+												}
+											},
+											"status": "Not Found",
+											"code": 404,
+											"_postman_previewlanguage": "text",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "text/plain"
+												}
+											],
+											"cookie": [],
+											"body": ""
+										},
+										{
+											"name": "OK",
+											"originalRequest": {
+												"method": "POST",
+												"header": [],
+												"url": {
+													"raw": "{{baseUrl}}/private/friendship/requests/deny/:id",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"private",
+														"friendship",
+														"requests",
+														"deny",
+														":id"
+													],
+													"variable": [
+														{
+															"key": "id"
+														}
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "text",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "text/plain"
+												}
+											],
+											"cookie": [],
+											"body": ""
+										},
+										{
+											"name": "Created",
+											"originalRequest": {
+												"method": "POST",
+												"header": [],
+												"url": {
+													"raw": "{{baseUrl}}/private/friendship/requests/deny/:id",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"private",
+														"friendship",
+														"requests",
+														"deny",
+														":id"
+													],
+													"variable": [
+														{
+															"key": "id"
+														}
+													]
+												}
+											},
+											"status": "Created",
+											"code": 201,
+											"_postman_previewlanguage": "text",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "text/plain"
+												}
+											],
+											"cookie": [],
+											"body": ""
+										}
+									]
+								},
+								{
+									"name": "sendRequest",
+									"request": {
+										"method": "POST",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/private/friendship/requests/:receiver",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"private",
+												"friendship",
+												"requests",
+												":receiver"
+											],
+											"variable": [
+												{
+													"id": "1731563d-8f7c-4612-a88c-025e0abcdaaa",
+													"key": "receiver",
+													"value": "<string>",
+													"type": "string",
+													"description": "(Required) receiver"
+												}
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "Unauthorized",
+											"originalRequest": {
+												"method": "POST",
+												"header": [],
+												"url": {
+													"raw": "{{baseUrl}}/private/friendship/requests/:receiver",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"private",
+														"friendship",
+														"requests",
+														":receiver"
+													],
+													"variable": [
+														{
+															"key": "receiver"
+														}
+													]
+												}
+											},
+											"status": "Unauthorized",
+											"code": 401,
+											"_postman_previewlanguage": "text",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "text/plain"
+												}
+											],
+											"cookie": [],
+											"body": ""
+										},
+										{
+											"name": "OK",
+											"originalRequest": {
+												"method": "POST",
+												"header": [],
+												"url": {
+													"raw": "{{baseUrl}}/private/friendship/requests/:receiver",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"private",
+														"friendship",
+														"requests",
+														":receiver"
+													],
+													"variable": [
+														{
+															"key": "receiver"
+														}
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "text",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "*/*"
+												}
+											],
+											"cookie": [],
+											"body": ""
+										},
+										{
+											"name": "Created",
+											"originalRequest": {
+												"method": "POST",
+												"header": [],
+												"url": {
+													"raw": "{{baseUrl}}/private/friendship/requests/:receiver",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"private",
+														"friendship",
+														"requests",
+														":receiver"
+													],
+													"variable": [
+														{
+															"key": "receiver"
+														}
+													]
+												}
+											},
+											"status": "Created",
+											"code": 201,
+											"_postman_previewlanguage": "text",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "text/plain"
+												}
+											],
+											"cookie": [],
+											"body": ""
+										},
+										{
+											"name": "Not Found",
+											"originalRequest": {
+												"method": "POST",
+												"header": [],
+												"url": {
+													"raw": "{{baseUrl}}/private/friendship/requests/:receiver",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"private",
+														"friendship",
+														"requests",
+														":receiver"
+													],
+													"variable": [
+														{
+															"key": "receiver"
+														}
+													]
+												}
+											},
+											"status": "Not Found",
+											"code": 404,
+											"_postman_previewlanguage": "text",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "text/plain"
+												}
+											],
+											"cookie": [],
+											"body": ""
+										},
+										{
+											"name": "Forbidden",
+											"originalRequest": {
+												"method": "POST",
+												"header": [],
+												"url": {
+													"raw": "{{baseUrl}}/private/friendship/requests/:receiver",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"private",
+														"friendship",
+														"requests",
+														":receiver"
+													],
+													"variable": [
+														{
+															"key": "receiver"
+														}
+													]
+												}
+											},
+											"status": "Forbidden",
+											"code": 403,
+											"_postman_previewlanguage": "text",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "text/plain"
+												}
+											],
+											"cookie": [],
+											"body": ""
+										}
+									]
+								}
+							],
+							"protocolProfileBehavior": {},
+							"_postman_isSubFolder": true
+						},
+						{
+							"name": "listMyFriends",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/private/friendship",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"private",
+										"friendship"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Not Found",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/private/friendship",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"private",
+												"friendship"
+											]
+										}
+									},
+									"status": "Not Found",
+									"code": 404,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "Unauthorized",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/private/friendship",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"private",
+												"friendship"
+											]
+										}
+									},
+									"status": "Unauthorized",
+									"code": 401,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "Forbidden",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/private/friendship",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"private",
+												"friendship"
+											]
+										}
+									},
+									"status": "Forbidden",
+									"code": 403,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "OK",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/private/friendship",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"private",
+												"friendship"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "*/*"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						},
+						{
+							"name": "undoFriendship",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/private/friendship/undo/:email",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"private",
+										"friendship",
+										"undo",
+										":email"
+									],
+									"variable": [
+										{
+											"id": "386af342-42e2-42c4-985f-82928148a7bd",
+											"key": "email",
+											"value": "<string>",
+											"type": "string",
+											"description": "(Required) email"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Created",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/private/friendship/undo/:email",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"private",
+												"friendship",
+												"undo",
+												":email"
+											],
+											"variable": [
+												{
+													"key": "email"
+												}
+											]
+										}
+									},
+									"status": "Created",
+									"code": 201,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "Forbidden",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/private/friendship/undo/:email",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"private",
+												"friendship",
+												"undo",
+												":email"
+											],
+											"variable": [
+												{
+													"key": "email"
+												}
+											]
+										}
+									},
+									"status": "Forbidden",
+									"code": 403,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "Not Found",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/private/friendship/undo/:email",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"private",
+												"friendship",
+												"undo",
+												":email"
+											],
+											"variable": [
+												{
+													"key": "email"
+												}
+											]
+										}
+									},
+									"status": "Not Found",
+									"code": 404,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "Unauthorized",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/private/friendship/undo/:email",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"private",
+												"friendship",
+												"undo",
+												":email"
+											],
+											"variable": [
+												{
+													"key": "email"
+												}
+											]
+										}
+									},
+									"status": "Unauthorized",
+									"code": 401,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "OK",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/private/friendship/undo/:email",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"private",
+												"friendship",
+												"undo",
+												":email"
+											],
+											"variable": [
+												{
+													"key": "email"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						},
+						{
+							"name": "findFriendship",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/private/friendship/:email",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"private",
+										"friendship",
+										":email"
+									],
+									"variable": [
+										{
+											"id": "a2561cc8-bd15-4ba6-b062-a433592c40ad",
+											"key": "email",
+											"value": "<string>",
+											"type": "string",
+											"description": "(Required) email"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Forbidden",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/private/friendship/:email",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"private",
+												"friendship",
+												":email"
+											],
+											"variable": [
+												{
+													"key": "email"
+												}
+											]
+										}
+									},
+									"status": "Forbidden",
+									"code": 403,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "Not Found",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/private/friendship/:email",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"private",
+												"friendship",
+												":email"
+											],
+											"variable": [
+												{
+													"key": "email"
+												}
+											]
+										}
+									},
+									"status": "Not Found",
+									"code": 404,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "Unauthorized",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/private/friendship/:email",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"private",
+												"friendship",
+												":email"
+											],
+											"variable": [
+												{
+													"key": "email"
+												}
+											]
+										}
+									},
+									"status": "Unauthorized",
+									"code": 401,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "OK",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/private/friendship/:email",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"private",
+												"friendship",
+												":email"
+											],
+											"variable": [
+												{
+													"key": "email"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "*/*"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						}
+					],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "post",
+					"item": [
+						{
+							"name": "listMyTimeline",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/private/post?page=<string>",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"private",
+										"post"
+									],
+									"query": [
+										{
+											"key": "page",
+											"value": "<string>",
+											"description": "(Required) page"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "OK",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/private/post?page=<string>",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"private",
+												"post"
+											],
+											"query": [
+												{
+													"key": "page",
+													"value": "<string>"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "*/*"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "Unauthorized",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/private/post?page=<string>",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"private",
+												"post"
+											],
+											"query": [
+												{
+													"key": "page",
+													"value": "<string>"
+												}
+											]
+										}
+									},
+									"status": "Unauthorized",
+									"code": 401,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "Not Found",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/private/post?page=<string>",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"private",
+												"post"
+											],
+											"query": [
+												{
+													"key": "page",
+													"value": "<string>"
+												}
+											]
+										}
+									},
+									"status": "Not Found",
+									"code": 404,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "Forbidden",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/private/post?page=<string>",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"private",
+												"post"
+											],
+											"query": [
+												{
+													"key": "page",
+													"value": "<string>"
+												}
+											]
+										}
+									},
+									"status": "Forbidden",
+									"code": 403,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						},
+						{
+							"name": "createPost",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"content\": \"<string>\",\n    \"visibility\": \"<string>\"\n}",
+									"options": {
+										"raw": {}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/private/post",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"private",
+										"post"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Created",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"content\": \"<string>\",\n    \"visibility\": \"<string>\"\n}"
+										},
+										"url": {
+											"raw": "{{baseUrl}}/private/post",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"private",
+												"post"
+											]
+										}
+									},
+									"status": "Created",
+									"code": 201,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "Not Found",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"content\": \"<string>\",\n    \"visibility\": \"<string>\"\n}"
+										},
+										"url": {
+											"raw": "{{baseUrl}}/private/post",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"private",
+												"post"
+											]
+										}
+									},
+									"status": "Not Found",
+									"code": 404,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "OK",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"content\": \"<string>\",\n    \"visibility\": \"<string>\"\n}"
+										},
+										"url": {
+											"raw": "{{baseUrl}}/private/post",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"private",
+												"post"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "*/*"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "Unauthorized",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"content\": \"<string>\",\n    \"visibility\": \"<string>\"\n}"
+										},
+										"url": {
+											"raw": "{{baseUrl}}/private/post",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"private",
+												"post"
+											]
+										}
+									},
+									"status": "Unauthorized",
+									"code": 401,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "Forbidden",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"content\": \"<string>\",\n    \"visibility\": \"<string>\"\n}"
+										},
+										"url": {
+											"raw": "{{baseUrl}}/private/post",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"private",
+												"post"
+											]
+										}
+									},
+									"status": "Forbidden",
+									"code": 403,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						},
+						{
+							"name": "likePost",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/private/post/like/:postId",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"private",
+										"post",
+										"like",
+										":postId"
+									],
+									"variable": [
+										{
+											"id": "4cf998ec-6ab2-4629-b15e-0a88e990a389",
+											"key": "postId",
+											"value": "<string>",
+											"type": "string",
+											"description": "(Required) postId"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Forbidden",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/private/post/like/:postId",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"private",
+												"post",
+												"like",
+												":postId"
+											],
+											"variable": [
+												{
+													"key": "postId"
+												}
+											]
+										}
+									},
+									"status": "Forbidden",
+									"code": 403,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "Unauthorized",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/private/post/like/:postId",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"private",
+												"post",
+												"like",
+												":postId"
+											],
+											"variable": [
+												{
+													"key": "postId"
+												}
+											]
+										}
+									},
+									"status": "Unauthorized",
+									"code": 401,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "OK",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/private/post/like/:postId",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"private",
+												"post",
+												"like",
+												":postId"
+											],
+											"variable": [
+												{
+													"key": "postId"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "Not Found",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/private/post/like/:postId",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"private",
+												"post",
+												"like",
+												":postId"
+											],
+											"variable": [
+												{
+													"key": "postId"
+												}
+											]
+										}
+									},
+									"status": "Not Found",
+									"code": 404,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "Created",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/private/post/like/:postId",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"private",
+												"post",
+												"like",
+												":postId"
+											],
+											"variable": [
+												{
+													"key": "postId"
+												}
+											]
+										}
+									},
+									"status": "Created",
+									"code": 201,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						},
+						{
+							"name": "unlikePost",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/private/post/unlike/:postId",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"private",
+										"post",
+										"unlike",
+										":postId"
+									],
+									"variable": [
+										{
+											"id": "f5ada1c8-a72e-4882-9069-50ed63dea25f",
+											"key": "postId",
+											"value": "<string>",
+											"type": "string",
+											"description": "(Required) postId"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Not Found",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/private/post/unlike/:postId",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"private",
+												"post",
+												"unlike",
+												":postId"
+											],
+											"variable": [
+												{
+													"key": "postId"
+												}
+											]
+										}
+									},
+									"status": "Not Found",
+									"code": 404,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "Forbidden",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/private/post/unlike/:postId",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"private",
+												"post",
+												"unlike",
+												":postId"
+											],
+											"variable": [
+												{
+													"key": "postId"
+												}
+											]
+										}
+									},
+									"status": "Forbidden",
+									"code": 403,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "Unauthorized",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/private/post/unlike/:postId",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"private",
+												"post",
+												"unlike",
+												":postId"
+											],
+											"variable": [
+												{
+													"key": "postId"
+												}
+											]
+										}
+									},
+									"status": "Unauthorized",
+									"code": 401,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "OK",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/private/post/unlike/:postId",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"private",
+												"post",
+												"unlike",
+												":postId"
+											],
+											"variable": [
+												{
+													"key": "postId"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "Created",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/private/post/unlike/:postId",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"private",
+												"post",
+												"unlike",
+												":postId"
+											],
+											"variable": [
+												{
+													"key": "postId"
+												}
+											]
+										}
+									},
+									"status": "Created",
+									"code": 201,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						},
+						{
+							"name": "updateVisibility",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/private/post/update-visibility/:postId?visibility=<string>",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"private",
+										"post",
+										"update-visibility",
+										":postId"
+									],
+									"query": [
+										{
+											"key": "visibility",
+											"value": "<string>",
+											"description": "(Required) visibility"
+										}
+									],
+									"variable": [
+										{
+											"id": "b4ba0d21-0c52-489f-a309-a62e23e471d2",
+											"key": "postId",
+											"value": "<string>",
+											"type": "string",
+											"description": "(Required) postId"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Unauthorized",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/private/post/update-visibility/:postId?visibility=<string>",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"private",
+												"post",
+												"update-visibility",
+												":postId"
+											],
+											"query": [
+												{
+													"key": "visibility",
+													"value": "<string>"
+												}
+											],
+											"variable": [
+												{
+													"key": "postId"
+												}
+											]
+										}
+									},
+									"status": "Unauthorized",
+									"code": 401,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "Not Found",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/private/post/update-visibility/:postId?visibility=<string>",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"private",
+												"post",
+												"update-visibility",
+												":postId"
+											],
+											"query": [
+												{
+													"key": "visibility",
+													"value": "<string>"
+												}
+											],
+											"variable": [
+												{
+													"key": "postId"
+												}
+											]
+										}
+									},
+									"status": "Not Found",
+									"code": 404,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "Forbidden",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/private/post/update-visibility/:postId?visibility=<string>",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"private",
+												"post",
+												"update-visibility",
+												":postId"
+											],
+											"query": [
+												{
+													"key": "visibility",
+													"value": "<string>"
+												}
+											],
+											"variable": [
+												{
+													"key": "postId"
+												}
+											]
+										}
+									},
+									"status": "Forbidden",
+									"code": 403,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "OK",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/private/post/update-visibility/:postId?visibility=<string>",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"private",
+												"post",
+												"update-visibility",
+												":postId"
+											],
+											"query": [
+												{
+													"key": "visibility",
+													"value": "<string>"
+												}
+											],
+											"variable": [
+												{
+													"key": "postId"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "Created",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/private/post/update-visibility/:postId?visibility=<string>",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"private",
+												"post",
+												"update-visibility",
+												":postId"
+											],
+											"query": [
+												{
+													"key": "visibility",
+													"value": "<string>"
+												}
+											],
+											"variable": [
+												{
+													"key": "postId"
+												}
+											]
+										}
+									},
+									"status": "Created",
+									"code": 201,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						},
+						{
+							"name": "listTimeline",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/private/post/:email?page=<string>",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"private",
+										"post",
+										":email"
+									],
+									"query": [
+										{
+											"key": "page",
+											"value": "<string>",
+											"description": "(Required) page"
+										}
+									],
+									"variable": [
+										{
+											"id": "58dc9583-aebf-4e51-b0cd-d6b189344d0f",
+											"key": "email",
+											"value": "<string>",
+											"type": "string",
+											"description": "(Required) email"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Unauthorized",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/private/post/:email?page=<string>",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"private",
+												"post",
+												":email"
+											],
+											"query": [
+												{
+													"key": "page",
+													"value": "<string>"
+												}
+											],
+											"variable": [
+												{
+													"key": "email"
+												}
+											]
+										}
+									},
+									"status": "Unauthorized",
+									"code": 401,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "Forbidden",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/private/post/:email?page=<string>",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"private",
+												"post",
+												":email"
+											],
+											"query": [
+												{
+													"key": "page",
+													"value": "<string>"
+												}
+											],
+											"variable": [
+												{
+													"key": "email"
+												}
+											]
+										}
+									},
+									"status": "Forbidden",
+									"code": 403,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "Not Found",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/private/post/:email?page=<string>",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"private",
+												"post",
+												":email"
+											],
+											"query": [
+												{
+													"key": "page",
+													"value": "<string>"
+												}
+											],
+											"variable": [
+												{
+													"key": "email"
+												}
+											]
+										}
+									},
+									"status": "Not Found",
+									"code": 404,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "OK",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/private/post/:email?page=<string>",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"private",
+												"post",
+												":email"
+											],
+											"query": [
+												{
+													"key": "page",
+													"value": "<string>"
+												}
+											],
+											"variable": [
+												{
+													"key": "email"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "*/*"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						},
+						{
+							"name": "commentOnPost",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"content\": \"<string>\",\n    \"visibility\": \"<string>\"\n}",
+									"options": {
+										"raw": {}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/private/post/:postId",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"private",
+										"post",
+										":postId"
+									],
+									"variable": [
+										{
+											"id": "8bd26963-2133-4a01-b502-d48361d1bd40",
+											"key": "postId",
+											"value": "<string>",
+											"type": "string",
+											"description": "(Required) postId"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Created",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"content\": \"<string>\",\n    \"visibility\": \"<string>\"\n}"
+										},
+										"url": {
+											"raw": "{{baseUrl}}/private/post/:postId",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"private",
+												"post",
+												":postId"
+											],
+											"variable": [
+												{
+													"key": "postId"
+												}
+											]
+										}
+									},
+									"status": "Created",
+									"code": 201,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "Unauthorized",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"content\": \"<string>\",\n    \"visibility\": \"<string>\"\n}"
+										},
+										"url": {
+											"raw": "{{baseUrl}}/private/post/:postId",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"private",
+												"post",
+												":postId"
+											],
+											"variable": [
+												{
+													"key": "postId"
+												}
+											]
+										}
+									},
+									"status": "Unauthorized",
+									"code": 401,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "Forbidden",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"content\": \"<string>\",\n    \"visibility\": \"<string>\"\n}"
+										},
+										"url": {
+											"raw": "{{baseUrl}}/private/post/:postId",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"private",
+												"post",
+												":postId"
+											],
+											"variable": [
+												{
+													"key": "postId"
+												}
+											]
+										}
+									},
+									"status": "Forbidden",
+									"code": 403,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "OK",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"content\": \"<string>\",\n    \"visibility\": \"<string>\"\n}"
+										},
+										"url": {
+											"raw": "{{baseUrl}}/private/post/:postId",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"private",
+												"post",
+												":postId"
+											],
+											"variable": [
+												{
+													"key": "postId"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "Not Found",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"content\": \"<string>\",\n    \"visibility\": \"<string>\"\n}"
+										},
+										"url": {
+											"raw": "{{baseUrl}}/private/post/:postId",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"private",
+												"post",
+												":postId"
+											],
+											"variable": [
+												{
+													"key": "postId"
+												}
+											]
+										}
+									},
+									"status": "Not Found",
+									"code": 404,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						}
+					],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "user",
+					"item": [
+						{
+							"name": "findMyself",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/private/user",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"private",
+										"user"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Not Found",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/private/user",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"private",
+												"user"
+											]
+										}
+									},
+									"status": "Not Found",
+									"code": 404,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "Unauthorized",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/private/user",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"private",
+												"user"
+											]
+										}
+									},
+									"status": "Unauthorized",
+									"code": 401,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "OK",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/private/user",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"private",
+												"user"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "*/*"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "Forbidden",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/private/user",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"private",
+												"user"
+											]
+										}
+									},
+									"status": "Forbidden",
+									"code": 403,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						},
+						{
+							"name": "updateMyself",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\": \"<string>\",\n    \"nickname\": \"<string>\",\n    \"profilePhoto\": \"<string>\"\n}",
+									"options": {
+										"raw": {}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/private/user/edit",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"private",
+										"user",
+										"edit"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Not Found",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"name\": \"<string>\",\n    \"nickname\": \"<string>\",\n    \"profilePhoto\": \"<string>\"\n}"
+										},
+										"url": {
+											"raw": "{{baseUrl}}/private/user/edit",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"private",
+												"user",
+												"edit"
+											]
+										}
+									},
+									"status": "Not Found",
+									"code": 404,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "Created",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"name\": \"<string>\",\n    \"nickname\": \"<string>\",\n    \"profilePhoto\": \"<string>\"\n}"
+										},
+										"url": {
+											"raw": "{{baseUrl}}/private/user/edit",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"private",
+												"user",
+												"edit"
+											]
+										}
+									},
+									"status": "Created",
+									"code": 201,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "Forbidden",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"name\": \"<string>\",\n    \"nickname\": \"<string>\",\n    \"profilePhoto\": \"<string>\"\n}"
+										},
+										"url": {
+											"raw": "{{baseUrl}}/private/user/edit",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"private",
+												"user",
+												"edit"
+											]
+										}
+									},
+									"status": "Forbidden",
+									"code": 403,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "Unauthorized",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"name\": \"<string>\",\n    \"nickname\": \"<string>\",\n    \"profilePhoto\": \"<string>\"\n}"
+										},
+										"url": {
+											"raw": "{{baseUrl}}/private/user/edit",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"private",
+												"user",
+												"edit"
+											]
+										}
+									},
+									"status": "Unauthorized",
+									"code": 401,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "OK",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"name\": \"<string>\",\n    \"nickname\": \"<string>\",\n    \"profilePhoto\": \"<string>\"\n}"
+										},
+										"url": {
+											"raw": "{{baseUrl}}/private/user/edit",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"private",
+												"user",
+												"edit"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						},
+						{
+							"name": "findUsersByNameOrEmail",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/private/user/search?page=0&query=<string>",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"private",
+										"user",
+										"search"
+									],
+									"query": [
+										{
+											"key": "page",
+											"value": "0",
+											"description": "page"
+										},
+										{
+											"key": "query",
+											"value": "<string>",
+											"description": "(Required) query"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "OK",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/private/user/search?page=0&query=<string>",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"private",
+												"user",
+												"search"
+											],
+											"query": [
+												{
+													"key": "page",
+													"value": "0"
+												},
+												{
+													"key": "query",
+													"value": "<string>"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "*/*"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "Forbidden",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/private/user/search?page=0&query=<string>",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"private",
+												"user",
+												"search"
+											],
+											"query": [
+												{
+													"key": "page",
+													"value": "0"
+												},
+												{
+													"key": "query",
+													"value": "<string>"
+												}
+											]
+										}
+									},
+									"status": "Forbidden",
+									"code": 403,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "Not Found",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/private/user/search?page=0&query=<string>",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"private",
+												"user",
+												"search"
+											],
+											"query": [
+												{
+													"key": "page",
+													"value": "0"
+												},
+												{
+													"key": "query",
+													"value": "<string>"
+												}
+											]
+										}
+									},
+									"status": "Not Found",
+									"code": 404,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "Unauthorized",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/private/user/search?page=0&query=<string>",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"private",
+												"user",
+												"search"
+											],
+											"query": [
+												{
+													"key": "page",
+													"value": "0"
+												},
+												{
+													"key": "query",
+													"value": "<string>"
+												}
+											]
+										}
+									},
+									"status": "Unauthorized",
+									"code": 401,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						},
+						{
+							"name": "findUserByEmail",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/private/user/:email",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"private",
+										"user",
+										":email"
+									],
+									"variable": [
+										{
+											"id": "2183dad8-e999-4808-a832-089198ba9a0e",
+											"key": "email",
+											"value": "<string>",
+											"type": "string",
+											"description": "(Required) email"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Not Found",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/private/user/:email",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"private",
+												"user",
+												":email"
+											],
+											"variable": [
+												{
+													"key": "email"
+												}
+											]
+										}
+									},
+									"status": "Not Found",
+									"code": 404,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "OK",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/private/user/:email",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"private",
+												"user",
+												":email"
+											],
+											"variable": [
+												{
+													"key": "email"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "*/*"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "Forbidden",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/private/user/:email",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"private",
+												"user",
+												":email"
+											],
+											"variable": [
+												{
+													"key": "email"
+												}
+											]
+										}
+									},
+									"status": "Forbidden",
+									"code": 403,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "Unauthorized",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/private/user/:email",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"private",
+												"user",
+												":email"
+											],
+											"variable": [
+												{
+													"key": "email"
+												}
+											]
+										}
+									},
+									"status": "Unauthorized",
+									"code": 401,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						}
+					],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				}
+			],
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "3fe1fe7a-38a1-4dea-9003-12f6a37cd453",
+						"type": "text/javascript",
+						"exec": [
+							"const loginBody = {",
+							"    email: pm.environment.get('email'),",
+							"    password: pm.environment.get('password')",
+							"}",
+							"",
+							"const postRequest = {",
+							"    url: pm.environment.get('base_url') + '/public/auth/login',",
+							"    method: 'POST',",
+							"    header: {",
+							"        'Content-Type': 'application/json'",
+							"    },",
+							"    body: {",
+							"        mode: 'raw',",
+							"        raw: JSON.stringify(loginBody)",
+							"    }",
+							"}",
+							"",
+							"pm.sendRequest(postRequest, (err, res) => {",
+							"    if (err === null) {",
+							"        const { token } = res.json();",
+							"        ",
+							"        pm.environment.set('token', token);",
+							"    } else console.error(err);",
+							"});"
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"id": "fcd29467-02ac-406c-9c98-39345a1d193f",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			],
+			"protocolProfileBehavior": {}
+		}
+	],
+	"variable": [
+		{
+			"id": "baseUrl",
+			"key": "baseUrl",
+			"value": "//localhost:8090/tcc-java",
+			"type": "string"
+		}
+	],
+	"protocolProfileBehavior": {}
+}

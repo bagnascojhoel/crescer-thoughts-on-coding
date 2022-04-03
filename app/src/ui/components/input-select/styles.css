@@ -1,0 +1,44 @@
+.input-select {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+  margin-bottom: var(--gutter);
+}
+
+.input-select--no-margin {
+  margin-bottom: 0;
+}
+
+.input-select__label {
+  margin-bottom: var(--mini-gutter);
+
+  font-weight: 300;
+}
+
+.input-select__input {
+  width: 100%;
+  display: block;
+  padding: var(--gutter) var(--mini-gutter);
+  margin-bottom: 1px;
+
+  border-radius: var(--border-radius);
+  background-color: var(--color-light-gray);
+  border: none;
+}
+
+.input-select__input--error {
+  border: 1px solid crimson;
+}
+
+.input-select__input:focus {
+  outline: none;
+}
+
+.input-select__error {
+  color: crimson;
+  font-size: 0.8rem;
+  font-weight: 300;
+}
+
+

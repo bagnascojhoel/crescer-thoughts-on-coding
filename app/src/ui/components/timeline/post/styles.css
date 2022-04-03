@@ -1,0 +1,34 @@
+.post__content {
+  font-size: 1.5rem;
+  font-family: monospace;
+}
+
+.post__author {
+  font-weight: bold;
+}
+
+.post__comment-form {
+  display: flex;
+  flex-direction: row;
+  justify-content: stretch;
+  align-items: stretch;
+  padding: var(--mini-gutter);
+  background-color: white;
+}
+
+.post__comment-form .input-text-area {
+  min-width: 50%;
+  margin-bottom: 0;
+}
+
+.post__comment-form__button {
+  margin-left: var(--large-gutter);
+}
+
+.post__actions {
+  margin: var(--gutter) 0;
+}
+
+.post__actions > .square-button {
+  margin-right: var(--gutter);
+}

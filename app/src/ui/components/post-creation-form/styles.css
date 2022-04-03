@@ -1,0 +1,6 @@
+.post-form {
+  margin: var(--large-gutter) auto;
+  max-width: 600px;
+
+  border-radius: var(--border-radius);
+}
